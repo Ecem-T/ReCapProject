@@ -22,5 +22,27 @@ namespace Business.Concrete
             return _carDal.GetAll();
 
         }
+
+        public IEnumerable<object> GetByBrandName(string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Car> GetAllByCarId(int id)
+        {
+            return _carDal.GetAll(c => c.Id == id);
+
+
+        }
+
+        public List<Car> GetByDailyPrice(double min, double max)
+        {
+            return _carDal.GetAll(c => c.DailyPrice >= min && c.DailyPrice <= max);
+        }
+
+        public List<Car> GetByDailyPrice(decimal min, decimal max)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
