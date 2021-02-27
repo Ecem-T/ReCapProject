@@ -40,9 +40,6 @@ namespace Business.Concrete
             return _carDal.GetAll(c => c.DailyPrice >= min && c.DailyPrice <= max);
         }
 
-        public List<Car> GetByDailyPrice(decimal min, decimal max)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

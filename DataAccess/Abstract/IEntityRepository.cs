@@ -12,6 +12,10 @@ namespace DataAccess.Abstract
         T Get(Expression<Func<T, bool>> filter);
         void Add(T entity);
         void Update(T entity);
-        void Delete(T entity);        
+        void Delete(T entity);
+        T GetById(Expression<Func<T, bool>> filter);
+        //List<T> GetByBrandId(Expression<Func<T,bool>> filter=null);
+        //List<T> GetByColorId(Expression<Func<T, bool>> filter=null);
+
     }
 }
