@@ -40,6 +40,14 @@ namespace Business.Concrete
             return _carDal.GetAll(c => c.DailyPrice >= min && c.DailyPrice <= max);
         }
 
-        
+        public List<Car> GetCarsByColorId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Car> GetCarsByBrandId(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

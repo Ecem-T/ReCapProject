@@ -62,5 +62,15 @@ namespace DataAccess.Concrete.EntityFramework
         {
             throw new NotImplementedException();
         }
+
+        public List<Car> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Car> GetAllByCategory(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
